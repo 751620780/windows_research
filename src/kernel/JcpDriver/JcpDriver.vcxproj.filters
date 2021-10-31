@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="第三方">
+      <UniqueIdentifier>{4d196ad7-fe11-4577-a997-66c4be3ffa74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kernel_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel_thirdparty\infinityhook\infinityhook.cpp">
+      <Filter>第三方</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kernel_shared\kernel_common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernel_main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_thirdparty\infinityhook\infinityhook.h">
+      <Filter>第三方</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_shared\kernel_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_shared\kernel_pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_shared\kernel_sr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_shared\x64_7601.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\kernel_user_share\kernel_user_share.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kernel_shared\x64_17763_253.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kernel_assembly.asm">
+      <Filter>源文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
